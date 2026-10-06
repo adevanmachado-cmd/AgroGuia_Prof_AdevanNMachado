@@ -1,0 +1,10 @@
+{
+  "name": "agroguia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Guia interativo para projetos de pesquisa e inovação no agronegócio",
+  "scripts": {
+    "start": "node server.js",
+    "build": "rm -rf dist && mkdir -p dist/public && cp index.html styles.css app.js logo.svg manus-routes.json dist/ && cp public/manus-routes.json dist/public/"
+  }
+}

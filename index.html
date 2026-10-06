@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guia interativo para planejar projetos de pesquisa e inovação no agronegócio." />
+    <meta name="theme-color" content="#1B5E4B" />
+    <title>AgroGuia — Projeto de Pesquisa e Inovação</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#inicio" aria-label="AgroGuia, início">
+          <span class="brand-mark" aria-hidden="true"><span></span></span>
+          <span><strong>AgroGuia<span class="brand-author">Professor: Adevan N Machado</span></strong><small>pesquisa que vira projeto</small></span>
+        </a>
+        <div class="topbar-actions">
+          <span class="save-status" id="save-status">Salvo neste dispositivo</span>
+          <button class="text-button" id="reset-button" type="button">Limpar respostas</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" id="inicio">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Projeto de pesquisa e inovação no agronegócio</p>
+            <h1>Comece pelo problema.<br /><em>Construa a solução.</em></h1>
+            <p class="hero-lead">Um guia direto para transformar uma situação real do campo em um projeto pesquisado, planejado e pronto para ser defendido.</p>
+            <div class="hero-actions">
+              <button class="primary-button" id="start-button" type="button">Começar a trilha <span aria-hidden="true">→</span></button>
+              <a class="secondary-link" href="#visao-geral">Ver todas as etapas <span aria-hidden="true">↓</span></a>
+            </div>
+            <div class="hero-note"><span class="note-line"></span><span>Regra de ouro: investigue primeiro, proponha depois.</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Ilustração abstrata de campo, dados e pesquisa">
+            <div class="field-sun"></div>
+            <div class="field-card card-one"><span>01</span><strong>observar</strong><small>o campo</small></div>
+            <div class="field-card card-two"><span>02</span><strong>entender</strong><small>o problema</small></div>
+            <div class="field-card card-three"><span>03</span><strong>testar</strong><small>a ideia</small></div>
+            <div class="field-grid"></div>
+            <div class="field-stem stem-one"></div><div class="field-stem stem-two"></div><div class="field-stem stem-three"></div>
+            <div class="visual-caption">do diagnóstico<br /><b>à defesa</b></div>
+          </div>
+        </section>
+
+        <section class="principle-strip" aria-label="Princípios do projeto">
+          <div><span class="strip-number">01</span><strong>Problema real</strong><small>Comece com uma dor comprovada.</small></div>
+          <div><span class="strip-number">02</span><strong>Pesquisa clara</strong><small>Use dados, fontes e escuta.</small></div>
+          <div><span class="strip-number">03</span><strong>Ideia viável</strong><small>Mostre custo, impacto e caminho.</small></div>
+        </section>
+
+        <section class="overview-section" id="visao-geral">
+          <div class="section-heading">
+            <div><p class="eyebrow">A trilha completa</p><h2>Doze passos para sair da ideia e chegar à banca.</h2></div>
+            <p class="section-intro">Siga na ordem. Cada etapa entrega uma parte do seu projeto e prepara a próxima decisão.</p>
+          </div>
+          <div class="overview-grid" id="overview-grid"></div>
+        </section>
+
+        <section class="workspace" id="trilha">
+          <aside class="step-sidebar">
+            <div class="sidebar-heading"><p class="eyebrow">Sua trilha</p><h2>Projeto em construção</h2></div>
+            <div class="progress-panel"><div class="progress-top"><span id="progress-label">0 de 12 etapas</span><strong id="progress-percent">0%</strong></div><div class="progress-track"><span id="progress-bar"></span></div></div>
+            <nav id="step-nav" aria-label="Etapas do projeto"></nav>
+          </aside>
+
+          <section class="step-content" id="step-content" aria-live="polite">
+            <div class="empty-state"><span class="empty-number">01</span><p class="eyebrow">Pronto para começar?</p><h2>Escolha uma etapa da trilha.</h2><p>Você pode começar pelo passo 1 ou abrir diretamente o ponto em que sua equipe está.</p><button class="primary-button" id="empty-start" type="button">Abrir etapa 1 <span aria-hidden="true">→</span></button></div>
+          </section>
+        </section>
+
+        <section class="final-section" id="entrega-final">
+          <div class="final-copy"><p class="eyebrow">Quando a trilha terminar</p><h2>Seu projeto precisa responder a uma pergunta simples.</h2><p>Qual problema do agronegócio vocês querem resolver, para quem, e como vão provar que a solução pode ajudar?</p><button class="primary-button" id="review-button" type="button">Revisar meu projeto <span aria-hidden="true">→</span></button></div>
+          <div class="final-card"><div class="final-card-top"><span class="stamp">ENTREGA FINAL</span><span class="final-icon" aria-hidden="true">↗</span></div><ol><li>Problema comprovado</li><li>Pesquisa organizada</li><li>Solução explicada</li><li>Viabilidade defendida</li><li>Pitch ensaiado</li></ol><div class="final-card-foot">Portfólio + projeto escrito + apresentação</div></div>
+        </section>
+      </main>
+
+      <footer class="footer"><span>AgroGuia · Pesquisa, gestão e inovação no campo</span><span>Feito para aprender fazendo.</span></footer>
+    </div>
+    <script src="/app.js" defer></script>
+  </body>
+</html>
